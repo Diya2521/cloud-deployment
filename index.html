@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Deployment</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #064e5b, #111827);
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #00e5ff;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #172337;
+      border-radius: 15px;
+    }
+
+    button {
+      padding: 14px 24px;
+      background: #00e5ff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Deploy Your Website</h1>
+    <p>From Code to a Live Website!</p>
+    <button onclick="showMessage()">Get Started</button>
+  </header>
+
+  <div class="card">
+    <h2>Welcome to Cloud Deployment</h2>
+    <p>
+      Learn how to build a website, upload it to GitHub,
+      and deploy it to the cloud.
+    </p>
+    <p id="message">Your cloud journey starts here.</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "Great! You are ready to deploy your first website!";
+    }
+  </script>
+</body>
+</html>
